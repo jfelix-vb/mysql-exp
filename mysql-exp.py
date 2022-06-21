@@ -87,6 +87,8 @@ def generate_data_row_text(data_row: [], table_descriptor: []) -> str:
 
 
 def get_data_token_representation(data_token, data_type: str) -> str:
+    if data_token is None:
+        return 'NULL'
     if 'int' in data_type:
         return str(data_token)
     elif 'varchar' in data_type:
