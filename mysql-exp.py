@@ -71,6 +71,8 @@ def append_data_insert(table_name: str, table_descriptor: [], primary_key_index:
         outcome_text.append("    ({0})".format(generate_data_row_text(data_row, table_descriptor)))
         max_primary_key_id = data_row[primary_key_index]
 
+    outcome_text.append(';')
+
     return max_primary_key_id
 
 

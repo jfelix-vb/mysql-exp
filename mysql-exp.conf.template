@@ -1,0 +1,6 @@
+[source]
+host = localhost
+database = boxcar
+port=3306
+user = boxcar
+password = <my_password>
